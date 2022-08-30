@@ -1,0 +1,9 @@
+# Update the three lines below to reflect the valid values for your deployment
+DEPLOYMENT_NAME=acme
+AUTH0_CLIENT_ID=acme_client_id
+AUTH0_CLIENT_SECRET=acme_client_secret
+
+# The lines below should remain unchanged
+API_BASE_URL=https://${DEPLOYMENT_NAME}.qualytics.io
+AUTH0_AUDIENCE=${DEPLOYMENT_NAME}-api
+AUTH0_DOMAIN=auth.qualytics.io

@@ -48,3 +48,5 @@ from swagger_client.models.rule_type import RuleType
 from swagger_client.models.quality_check_properties import QualityCheckProperties
 from swagger_client.models.store_container_stub import StoreContainerStub
 from swagger_client.models.user import User
+from swagger_client.models.response_create_data_store_data_stores_post import ResponseCreateDataStoreDataStoresPost
+from swagger_client.models.response_create_data_store_api_data_stores_post import ResponseCreateDataStoreApiDataStoresPost

@@ -15,8 +15,8 @@ data = {
 	"name": "Name of your Data Store",
 	"type": "wasb",
 	"uri": "wasb[s]://file_system@account_name.dfs.core.windows.net/<path>",
-	"account_name": "",
-	"access_key":""
+	"access_key": "",
+	"secret_key":""
 }
 
 body = swagger_client.DataStore() # DataStore |

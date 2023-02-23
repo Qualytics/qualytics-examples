@@ -15,7 +15,7 @@ data = {
 	],
 	"description": "Is not Null",
 	"rule": "notNull",
-	"frequency": 1
+	"coverage": 1
 }
 # create an instance of the API class
 api_instance = swagger_client.QualityChecksApi(swagger_client.ApiClient(configuration))

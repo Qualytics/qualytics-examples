@@ -13,7 +13,14 @@ body = {
   "description": "Notification that triggers on anomalies",
   "trigger_type": "Anomaly",
   "tokenized_message": "Some anomaly found detected",
-  "slack_webhook": "slack url",
+  "receivers": [
+    {
+      "type": "Email",
+      "parameters": {
+        "emails": "johndoe@email.com"
+      }
+    }
+  ],
   "tags": [
     "Critical"
   ]

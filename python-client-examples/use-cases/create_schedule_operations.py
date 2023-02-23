@@ -11,18 +11,18 @@ configuration = swagger_client.Configuration()
 data_catalog = {
   "crontab": "*/10 * * * *",
   "type": "catalog",
-  "data_store_id": 193
+  "datastore_id": 193
 }
 data_profile = {
   "crontab": "*/10 * * * *",
   "type": "profile",
-  "data_store_id": 193
+  "datastore_id": 193
 }
 
 data_scan = {
   "crontab": "*/10 * * * *",
   "type": "scan",
-  "data_store_id": 0
+  "datastore_id": 0
 }
 # create an instance of the API class
 api_instance = swagger_client.OperationsApi(swagger_client.ApiClient(configuration))

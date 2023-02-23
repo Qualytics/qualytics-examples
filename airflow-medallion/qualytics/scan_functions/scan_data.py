@@ -4,7 +4,7 @@ import json
 
 def get_datastore_details(datastore_name, api_url, auth_header):
     print(api_url)
-    response = requests.get(api_url + 'data-stores', params={'name': datastore_name}, headers=auth_header)
+    response = requests.get(api_url + 'datastores', params={'name': datastore_name}, headers=auth_header)
     if response.status_code == 200:
         return response.json()['items'][0]['id']
     elif response.status_code in [403, 401]:
@@ -22,7 +22,7 @@ def run_scan(datastore_name, container_name, api_url, auth_header):
         if(container_name.upper() != "ALL"):
             container_field = '"container_names" : ["' + container_name + '"], '
         
-        body = '{"type": "scan", ' + container_field + '"data_store_id":' + str(ds_id) + ', ' + '"incremental": "True"}'
+        body = '{"type": "scan", ' + container_field + '"datastore_id":' + str(ds_id) + ', ' + '"incremental": "True"}'
         print(body)
         response = requests.post(api_url + 'operations/run', json=json.loads(body), headers=auth_header)
         if response.status_code == 200:

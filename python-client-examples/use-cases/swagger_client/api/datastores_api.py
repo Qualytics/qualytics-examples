@@ -1527,7 +1527,7 @@ class DatastoresApi(object):
     def verify_datastore_connection(self, id, **kwargs):  # noqa: E501
         """Verify Datastore Connection  # noqa: E501
 
-        Should respond `connected: true` if the datastore is able to achieve it's intended purpose, otherwise `connected: false, message: detail` - a datastore should be able to read - an enrichment store should be able to read and write  # noqa: E501
+        Should respond `connected: true` if the datastore is able to achieve it's intended purpose, otherwise `connected: false, message: detail` - a datastore should be able to read - an enrichment datastore should be able to read and write  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.verify_datastore_connection(id, async_req=True)
@@ -1549,7 +1549,7 @@ class DatastoresApi(object):
     def verify_datastore_connection_with_http_info(self, id, **kwargs):  # noqa: E501
         """Verify Datastore Connection  # noqa: E501
 
-        Should respond `connected: true` if the datastore is able to achieve it's intended purpose, otherwise `connected: false, message: detail` - a datastore should be able to read - an enrichment store should be able to read and write  # noqa: E501
+        Should respond `connected: true` if the datastore is able to achieve it's intended purpose, otherwise `connected: false, message: detail` - a datastore should be able to read - an enrichment datastore should be able to read and write  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.verify_datastore_connection_with_http_info(id, async_req=True)

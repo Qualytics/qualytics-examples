@@ -9,11 +9,11 @@ configuration = swagger_client.Configuration()
 
 # create an instance of the API class
 api_instance = swagger_client.ContainersApi(swagger_client.ApiClient(configuration))
-data_store_id = 0
+datastore_id = 0
 
 try:
     # Get Containers
-    api_response = api_instance.get_containers(data_store = data_store_id)
+    api_response = api_instance.get_containers(datastore = datastore_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling ContainersApi->get_containers: %s\n" % e)

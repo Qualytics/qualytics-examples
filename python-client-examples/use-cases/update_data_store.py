@@ -8,19 +8,19 @@ from pprint import pprint
 configuration = swagger_client.Configuration()
 
 # create an instance of the API class
-api_instance = swagger_client.DataStoresApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.DatastoresApi(swagger_client.ApiClient(configuration))
 
-data_store_id = 0
+datastore_id = 0
 data = {
 	"type": "wasb",
     "name": "new name for my datastore"
 }
-body = swagger_client.DataStore1() # DataStore1 |
+body = swagger_client.Datastore1() # Datastore1 |
 
 
 try:
-    # Update Data Store
-    api_response = api_instance.update_data_store(data, data_store_id)
+    # Update Datastore
+    api_response = api_instance.update_datastore(data, datastore_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DataStoresApi->update_data_store: %s\n" % e)
+    print("Exception when calling DatastoresApi->update_datastore: %s\n" % e)

@@ -9,18 +9,18 @@ configuration = swagger_client.Configuration()
 
 # Update the payloads with the specifics for your needs.  See the official docs (Note that "demo" can be replaed in this URL to load the docs from your deployment) for the expected schema and valid values: https://demo.qualytics.io/api/docs#tag/operations/operation/create_operation
 data_profile = {
-	"data_store_id": 0,
+	"datastore_id": 0,
 	"type": "profile",
 	"infer_constraints": True
 }
 data_scan = {
-	"data_store_id": 0,
+	"datastore_id": 0,
 	"type": "scan",
 	"infer_constraints": True
 }
 
 data_catalog = {
-    "data_store_id": 0,
+    "datastore_id": 0,
     "type": "catalog",
     "infer_constraints": True
 }

@@ -8,22 +8,22 @@ from pprint import pprint
 configuration = swagger_client.Configuration()
 
 # create an instance of the API class
-api_instance = swagger_client.DataStoresApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.DatastoresApi(swagger_client.ApiClient(configuration))
 
-# Update the payload with the specifics for your datastore.  See the official docs (Note that "demo" can be replaed in this URL to load the docs from your deployment) for the expected schema and valid values: https://demo.qualytics.io/api/docs#tag/data-stores/operation/create_data_store
+# Update the payload with the specifics for your datastore.  See the official docs (Note that "demo" can be replaed in this URL to load the docs from your deployment) for the expected schema and valid values: https://demo.qualytics.io/api/docs#tag/datastores/operation/create_datastore
 data = {
-	"name": "Name of your Data Store",
+	"name": "Name of your Datastore",
 	"type": "wasb",
 	"uri": "wasb[s]://file_system@account_name.dfs.core.windows.net/<path>",
 	"access_key": "",
 	"secret_key":""
 }
 
-body = swagger_client.DataStore() # DataStore |
+body = swagger_client.Datastore() # Datastore |
 
 try:
-    # Create Data Store
-    api_response = api_instance.create_data_store(data)
+    # Create Datastore
+    api_response = api_instance.create_datastore(data)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DataStoresApi->create_data_store: %s\n" % e)
+    print("Exception when calling DatastoresApi->create_datastore: %s\n" % e)

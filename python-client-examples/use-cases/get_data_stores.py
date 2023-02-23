@@ -9,11 +9,11 @@ from pprint import pprint
 configuration = swagger_client.Configuration()
 
 # create an instance of the API class
-api_instance = swagger_client.DataStoresApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.DatastoresApi(swagger_client.ApiClient(configuration))
 
 try:
-    # Create Data Store
-    api_response = api_instance.get_data_stores()
+    # Create Datastore
+    api_response = api_instance.get_datastores()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DataStoresApi->get_data_stores: %s\n" % e)
+    print("Exception when calling DatastoresApi->get_datastores: %s\n" % e)

@@ -16,13 +16,13 @@ data_profile = {
 data_scan = {
 	"datastore_id": 0,
 	"type": "scan",
-	"infer_constraints": True
+	"incremental": True
 }
 
 data_catalog = {
     "datastore_id": 0,
     "type": "catalog",
-    "infer_constraints": True
+    "recreate": True
 }
 # create an instance of the API class
 api_instance = swagger_client.OperationsApi(swagger_client.ApiClient(configuration))

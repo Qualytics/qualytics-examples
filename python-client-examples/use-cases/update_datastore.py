@@ -12,8 +12,13 @@ api_instance = swagger_client.DatastoresApi(swagger_client.ApiClient(configurati
 
 datastore_id = 0
 data = {
+	"name": "New Name of your Datastore",
 	"type": "wasb",
-    "name": "new name for my datastore"
+	"uri": "wasb[s]://file_system@account_name.dfs.core.windows.net/<path>",
+    "enrich_only": False,
+    "enrich_container_prefix": "_name_of_your_datastore",
+	"access_key": "",
+	"secret_key":None
 }
 body = swagger_client.Datastore1() # Datastore1 |
 

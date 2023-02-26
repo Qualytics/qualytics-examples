@@ -12,7 +12,7 @@ CLIENT_SECRET = "YOUR_SECRET"
 
 # Start Helper functions
 def _get_token():
-    audience = "brookfield-api"
+    audience = "YOUR_DEPLOYMENT_NAME-api" # ex: acme-api
     grant_type = "client_credentials"
 
     # Define the endpoint for token retrieval
@@ -96,9 +96,9 @@ def get_datastore_containers(token, datastore_id):
 def main():
     token = _get_token()
 
-    get_datastores(token)
+    # get_datastores(token) # uncomment this line to get the datastores
     # get_datastore_by_id(token, 162) # uncomment this line to get the datastore by id
-    # get_datastore_containers(token, 162) # uncomment this line to get the datastore containers
+    get_datastore_containers(token, 162)
 
 
 if __name__ == '__main__':

@@ -2,7 +2,6 @@ import requests
 import json
 
 # Define the base URL for the API
-AUTH_URL = "auth.qualytics.io"
 BASE_URL = "YOUR_DEPLOYMENT_URL" # ex: https://acme.qualytics.io/api
 
 # Secrets for Auth Token

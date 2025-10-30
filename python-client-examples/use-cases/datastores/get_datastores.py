@@ -1,19 +1,35 @@
 from __future__ import print_function
-import time
-import swagger_client
+import sys
 import os
-from swagger_client.rest import ApiException
 from pprint import pprint
+
+# Add the parent directory to the path so we can import swagger_client
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import swagger_client
+from swagger_client.rest import ApiException
+from swagger_client.custom_api_client import CustomApiClient
 
 # Configure OAuth2 access token for authorization: Auth0ImplicitBearer
 configuration = swagger_client.Configuration()
 
-# create an instance of the API class
-api_instance = swagger_client.DatastoresApi(swagger_client.ApiClient(configuration))
+# Create an instance of the API class using CustomApiClient
+# The CustomApiClient handles lenient deserialization to avoid validation errors
+api_instance = swagger_client.DatastoresApi(CustomApiClient(configuration))
 
 try:
-    # Create Datastore
+    # Get all datastores
     api_response = api_instance.get_datastores()
+
+    # Handle response - could be an object or a dict
+    if isinstance(api_response, dict):
+        items_count = len(api_response.get('items', []))
+    elif hasattr(api_response, 'items') and not callable(api_response.items):
+        items_count = len(api_response.items)
+    else:
+        items_count = 'N/A'
+
+    print(f"Retrieved {items_count} datastores")
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling DatastoresApi->get_datastores: %s\n" % e)

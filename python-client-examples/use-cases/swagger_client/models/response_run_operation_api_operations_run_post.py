@@ -19,11 +19,11 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.catalog_operation import CatalogOperation
-from openapi_client.models.export_operation import ExportOperation
-from openapi_client.models.materialize_operation import MaterializeOperation
-from openapi_client.models.profile_operation import ProfileOperation
-from openapi_client.models.scan_operation import ScanOperation
+from swagger_client.models.catalog_operation import CatalogOperation
+from swagger_client.models.export_operation import ExportOperation
+from swagger_client.models.materialize_operation import MaterializeOperation
+from swagger_client.models.profile_operation import ProfileOperation
+from swagger_client.models.scan_operation import ScanOperation
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

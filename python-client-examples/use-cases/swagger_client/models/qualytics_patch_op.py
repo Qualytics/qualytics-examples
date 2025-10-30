@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.qualytics_patch_operation import QualyticsPatchOperation
+from swagger_client.models.qualytics_patch_operation import QualyticsPatchOperation
 from typing import Optional, Set
 from typing_extensions import Self
 

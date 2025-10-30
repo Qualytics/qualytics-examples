@@ -20,8 +20,8 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.flow_stub_permission import FlowStubPermission
-from openapi_client.models.trigger_type import TriggerType
+from swagger_client.models.flow_stub_permission import FlowStubPermission
+from swagger_client.models.trigger_type import TriggerType
 from typing import Optional, Set
 from typing_extensions import Self
 

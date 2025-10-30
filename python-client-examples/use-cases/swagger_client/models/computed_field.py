@@ -20,10 +20,10 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.computed_field_properties import ComputedFieldProperties
-from openapi_client.models.field_stub import FieldStub
-from openapi_client.models.transformation_type import TransformationType
-from openapi_client.models.user_stub import UserStub
+from swagger_client.models.computed_field_properties import ComputedFieldProperties
+from swagger_client.models.field_stub import FieldStub
+from swagger_client.models.transformation_type import TransformationType
+from swagger_client.models.user_stub import UserStub
 from typing import Optional, Set
 from typing_extensions import Self
 

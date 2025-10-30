@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.continuum_transaction import ContinuumTransaction
+from swagger_client.models.continuum_transaction import ContinuumTransaction
 from typing import Optional, Set
 from typing_extensions import Self
 

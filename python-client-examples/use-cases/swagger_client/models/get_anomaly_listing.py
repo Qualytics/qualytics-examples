@@ -21,12 +21,12 @@ from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictFloat, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from uuid import UUID
-from openapi_client.models.anomaly_status_type import AnomalyStatusType
-from openapi_client.models.container2 import Container2
-from openapi_client.models.datastore_stub import DatastoreStub
-from openapi_client.models.failed_check_listing import FailedCheckListing
-from openapi_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
-from openapi_client.models.partition_stub import PartitionStub
+from swagger_client.models.anomaly_status_type import AnomalyStatusType
+from swagger_client.models.container2 import Container2
+from swagger_client.models.datastore_stub import DatastoreStub
+from swagger_client.models.failed_check_listing import FailedCheckListing
+from swagger_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
+from swagger_client.models.partition_stub import PartitionStub
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -19,8 +19,8 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.external_tag import ExternalTag
-from openapi_client.models.global_tag import GlobalTag
+from swagger_client.models.external_tag import ExternalTag
+from swagger_client.models.global_tag import GlobalTag
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

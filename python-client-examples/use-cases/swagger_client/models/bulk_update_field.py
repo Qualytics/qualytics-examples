@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.id3 import Id3
+from swagger_client.models.id3 import Id3
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.create_integration_parameters import CreateIntegrationParameters
+from swagger_client.models.create_integration_parameters import CreateIntegrationParameters
 from typing import Optional, Set
 from typing_extensions import Self
 

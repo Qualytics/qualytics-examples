@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.archived_anomaly_status_type import ArchivedAnomalyStatusType
+from swagger_client.models.archived_anomaly_status_type import ArchivedAnomalyStatusType
 from typing import Optional, Set
 from typing_extensions import Self
 

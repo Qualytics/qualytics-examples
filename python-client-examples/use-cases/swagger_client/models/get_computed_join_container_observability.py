@@ -20,10 +20,10 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
-from openapi_client.models.datastore_stub_lite import DatastoreStubLite
-from openapi_client.models.get_observability_check_listing import GetObservabilityCheckListing
-from openapi_client.models.get_observability_measurement import GetObservabilityMeasurement
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.datastore_stub_lite import DatastoreStubLite
+from swagger_client.models.get_observability_check_listing import GetObservabilityCheckListing
+from swagger_client.models.get_observability_measurement import GetObservabilityMeasurement
 from typing import Optional, Set
 from typing_extensions import Self
 

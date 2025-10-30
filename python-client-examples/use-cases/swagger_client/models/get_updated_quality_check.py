@@ -20,9 +20,9 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.check_status_type import CheckStatusType
-from openapi_client.models.global_tag import GlobalTag
-from openapi_client.models.user_stub import UserStub
+from swagger_client.models.check_status_type import CheckStatusType
+from swagger_client.models.global_tag import GlobalTag
+from swagger_client.models.user_stub import UserStub
 from typing import Optional, Set
 from typing_extensions import Self
 

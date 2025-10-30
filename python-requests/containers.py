@@ -93,108 +93,6 @@ def create_computed_table_container(datastore_id, name, query, additional_metada
     else:
         print(f"Failed to create computed table container: {response.text}")
 
-
-def create_computed_file_container(datastore_id, source_container_id, name,
-                                   select_clause, where_clause=None, additional_metadata=None):
-    """
-    Create a computed file container with transformations on an existing file container.
-
-    Args:
-        datastore_id (int): The ID of the datastore where the computed file will be created
-        source_container_id (int): The ID of the source file container to transform
-        name (str): The name of the computed file
-        select_clause (str): SQL SELECT clause to transform the data (e.g., "col1, col2, UPPER(col3) as col3_upper")
-        where_clause (str): Optional WHERE clause to filter data
-        additional_metadata (dict): Optional additional metadata
-    """
-    # Define the full URL for the endpoint
-    endpoint = "containers"
-    url = f"{BASE_URL}/{endpoint}"
-
-    # Define the request body for computed file container
-    body = {
-        "container_type": "computed_file",
-        "datastore_id": datastore_id,
-        "source_container_id": source_container_id,
-        "name": name,
-        "select_clause": select_clause
-    }
-
-    # Add optional fields if provided
-    if where_clause:
-        body["where_clause"] = where_clause
-    if additional_metadata:
-        body["additional_metadata"] = additional_metadata
-
-    # Make the request
-    response = requests.post(url, headers=_get_default_headers(), json=body)
-
-    # Print the response content
-    print(f"Status Code: {response.status_code}")
-    if response.status_code in [200, 201]:
-        print(f"Successfully created computed file container: {name}")
-        _pprint(response.content)
-    else:
-        print(f"Failed to create computed file container: {response.text}")
-
-
-def create_computed_join_container(name, left_container_id, left_join_field_name,
-                                   right_container_id, right_join_field_name,
-                                   select_clause, join_type="inner",
-                                   left_prefix="left", right_prefix="right",
-                                   where_clause=None, additional_metadata=None):
-    """
-    Create a computed join container by joining two existing containers.
-
-    Args:
-        name (str): The name of the joined container
-        left_container_id (int): The container ID of the left side
-        left_join_field_name (str): The field to join on from the left side
-        right_container_id (int): The container ID of the right side
-        right_join_field_name (str): The field to join on from the right side
-        select_clause (str): SELECT clause using prefixed field names (e.g., "left.id, right.name")
-        join_type (str): Type of join - "inner", "left", "right", or "full" (default: "inner")
-        left_prefix (str): Alias prefix for left side columns (default: "left")
-        right_prefix (str): Alias prefix for right side columns (default: "right")
-        where_clause (str): Optional WHERE clause to filter the join result
-        additional_metadata (dict): Optional additional metadata
-    """
-    # Define the full URL for the endpoint
-    endpoint = "containers"
-    url = f"{BASE_URL}/{endpoint}"
-
-    # Define the request body for computed join container
-    body = {
-        "container_type": "computed_join",
-        "name": name,
-        "left_container_id": left_container_id,
-        "left_join_field_name": left_join_field_name,
-        "left_prefix": left_prefix,
-        "right_container_id": right_container_id,
-        "right_join_field_name": right_join_field_name,
-        "right_prefix": right_prefix,
-        "join_type": join_type,
-        "select_clause": select_clause
-    }
-
-    # Add optional fields if provided
-    if where_clause:
-        body["where_clause"] = where_clause
-    if additional_metadata:
-        body["additional_metadata"] = additional_metadata
-
-    # Make the request
-    response = requests.post(url, headers=_get_default_headers(), json=body)
-
-    # Print the response content
-    print(f"Status Code: {response.status_code}")
-    if response.status_code in [200, 201]:
-        print(f"Successfully created computed join container: {name}")
-        _pprint(response.content)
-    else:
-        print(f"Failed to create computed join container: {response.text}")
-
-
 def update_container(container_id, container_type, exclude_fields=None, tags=None,
                      freshness_tracking_enabled=None, volumetric_tracking_enabled=None,
                      partition_field=None, incremental_field_name=None,
@@ -271,26 +169,7 @@ def main():
     #     query="SELECT * FROM nation"
     # )
 
-    # Example 6: Create a computed file container (transformed file container)
-    # create_computed_file_container(
-    #     datastore_id=1711,
-    #     source_container_id=43664,  # ID of the source file container
-    #     name="filtered_customer_data",
-    #     select_clause="business_id",
-    # )
-
-    # Example 7: Create a computed join container (join two containers)
-    # create_computed_join_container(
-    #     name="customers_with_orders",
-    #     left_container_id=1234,  # customers table
-    #     left_join_field_name="customer_id",
-    #     right_container_id=5678,  # orders table
-    #     right_join_field_name="customer_id",
-    #     select_clause="left.customer_id, left.name, left.email, right.order_id, right.order_total",
-    #     join_type="inner"
-    # )
-
-    # Example 8: Update a container - add tags
+    # Example 4: Update a container - add tags
     # update_container(
     #     container_id=43664,
     #     container_type="table",

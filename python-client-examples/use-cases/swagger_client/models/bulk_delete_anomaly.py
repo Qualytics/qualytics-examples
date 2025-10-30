@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictBool
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.archived_anomaly_status_type import ArchivedAnomalyStatusType
-from openapi_client.models.id1 import Id1
+from swagger_client.models.archived_anomaly_status_type import ArchivedAnomalyStatusType
+from swagger_client.models.id1 import Id1
 from typing import Optional, Set
 from typing_extensions import Self
 

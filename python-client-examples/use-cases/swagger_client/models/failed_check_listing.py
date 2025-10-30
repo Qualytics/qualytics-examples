@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictFloat, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from openapi_client.models.quality_check_listing import QualityCheckListing
+from swagger_client.models.quality_check_listing import QualityCheckListing
 from typing import Optional, Set
 from typing_extensions import Self
 

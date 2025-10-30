@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.field_type import FieldType
-from openapi_client.models.get_computed_field_spec_properties import GetComputedFieldSpecProperties
+from swagger_client.models.field_type import FieldType
+from swagger_client.models.get_computed_field_spec_properties import GetComputedFieldSpecProperties
 from typing import Optional, Set
 from typing_extensions import Self
 

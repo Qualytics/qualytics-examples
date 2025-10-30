@@ -20,7 +20,7 @@ import json
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Any, ClassVar, Dict, List
 from typing_extensions import Annotated
-from openapi_client.models.action import Action
+from swagger_client.models.action import Action
 from typing import Optional, Set
 from typing_extensions import Self
 

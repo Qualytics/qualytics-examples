@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.scim2_models_rfc7643_user_photo_type import Scim2ModelsRfc7643UserPhotoType
+from swagger_client.models.scim2_models_rfc7643_user_photo_type import Scim2ModelsRfc7643UserPhotoType
 from typing import Optional, Set
 from typing_extensions import Self
 

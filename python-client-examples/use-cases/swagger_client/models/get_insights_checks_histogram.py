@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictFloat, StrictInt
 from typing import Any, ClassVar, Dict, List, Union
-from openapi_client.models.rule_type import RuleType
+from swagger_client.models.rule_type import RuleType
 from typing import Optional, Set
 from typing_extensions import Self
 

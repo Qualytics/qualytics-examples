@@ -20,12 +20,12 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
-from openapi_client.models.datastore_stub_lite import DatastoreStubLite
-from openapi_client.models.flow_actions_inner import FlowActionsInner
-from openapi_client.models.rule_type import RuleType
-from openapi_client.models.team import Team
-from openapi_client.models.trigger_type import TriggerType
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.datastore_stub_lite import DatastoreStubLite
+from swagger_client.models.flow_actions_inner import FlowActionsInner
+from swagger_client.models.rule_type import RuleType
+from swagger_client.models.team import Team
+from swagger_client.models.trigger_type import TriggerType
 from typing import Optional, Set
 from typing_extensions import Self
 

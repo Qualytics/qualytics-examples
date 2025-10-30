@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictInt
 from typing import Any, ClassVar, Dict, List
-from openapi_client.models.operation_daily_metrics import OperationDailyMetrics
-from openapi_client.models.operation_range_metrics import OperationRangeMetrics
+from swagger_client.models.operation_daily_metrics import OperationDailyMetrics
+from swagger_client.models.operation_range_metrics import OperationRangeMetrics
 from typing import Optional, Set
 from typing_extensions import Self
 

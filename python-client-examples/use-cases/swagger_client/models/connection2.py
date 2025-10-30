@@ -19,8 +19,8 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.create_dfs_connection import CreateDfsConnection
-from openapi_client.models.create_jdbc_connection import CreateJdbcConnection
+from swagger_client.models.create_dfs_connection import CreateDfsConnection
+from swagger_client.models.create_jdbc_connection import CreateJdbcConnection
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

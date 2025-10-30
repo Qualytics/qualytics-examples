@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.notification_type import NotificationType
+from swagger_client.models.notification_type import NotificationType
 from typing import Optional, Set
 from typing_extensions import Self
 

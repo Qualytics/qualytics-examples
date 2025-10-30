@@ -19,9 +19,9 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.computed_join_container import ComputedJoinContainer
-from openapi_client.models.computed_table_container import ComputedTableContainer
-from openapi_client.models.table_container import TableContainer
+from swagger_client.models.computed_join_container import ComputedJoinContainer
+from swagger_client.models.computed_table_container import ComputedTableContainer
+from swagger_client.models.table_container import TableContainer
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

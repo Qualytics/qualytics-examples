@@ -19,10 +19,10 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.create_action_notification import CreateActionNotification
-from openapi_client.models.create_action_operation import CreateActionOperation
-from openapi_client.models.update_action_notification import UpdateActionNotification
-from openapi_client.models.update_action_operation import UpdateActionOperation
+from swagger_client.models.create_action_notification import CreateActionNotification
+from swagger_client.models.create_action_operation import CreateActionOperation
+from swagger_client.models.update_action_notification import UpdateActionNotification
+from swagger_client.models.update_action_operation import UpdateActionOperation
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

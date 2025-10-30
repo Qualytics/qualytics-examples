@@ -17,9 +17,9 @@ import json
 import pprint
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Any, List, Optional
-from openapi_client.models.create_computed_file_container import CreateComputedFileContainer
-from openapi_client.models.create_computed_join_container import CreateComputedJoinContainer
-from openapi_client.models.create_computed_table_container import CreateComputedTableContainer
+from swagger_client.models.create_computed_file_container import CreateComputedFileContainer
+from swagger_client.models.create_computed_join_container import CreateComputedJoinContainer
+from swagger_client.models.create_computed_table_container import CreateComputedTableContainer
 from pydantic import StrictStr, Field
 from typing import Union, List, Set, Optional, Dict
 from typing_extensions import Literal, Self

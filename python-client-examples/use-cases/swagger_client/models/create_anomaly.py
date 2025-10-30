@@ -20,7 +20,7 @@ import json
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
 from uuid import UUID
-from openapi_client.models.create_failed_check import CreateFailedCheck
+from swagger_client.models.create_failed_check import CreateFailedCheck
 from typing import Optional, Set
 from typing_extensions import Self
 

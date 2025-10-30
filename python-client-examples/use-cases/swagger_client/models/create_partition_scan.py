@@ -20,11 +20,11 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.create_anomaly import CreateAnomaly
-from openapi_client.models.create_check_measurements import CreateCheckMeasurements
-from openapi_client.models.create_check_metrics import CreateCheckMetrics
-from openapi_client.models.create_partition import CreatePartition
-from openapi_client.models.enrichment_source_record import EnrichmentSourceRecord
+from swagger_client.models.create_anomaly import CreateAnomaly
+from swagger_client.models.create_check_measurements import CreateCheckMeasurements
+from swagger_client.models.create_check_metrics import CreateCheckMetrics
+from swagger_client.models.create_partition import CreatePartition
+from swagger_client.models.enrichment_source_record import EnrichmentSourceRecord
 from typing import Optional, Set
 from typing_extensions import Self
 

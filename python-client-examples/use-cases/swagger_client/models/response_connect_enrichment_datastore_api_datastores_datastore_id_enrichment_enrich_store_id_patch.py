@@ -17,8 +17,8 @@ import json
 import pprint
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Any, List, Optional
-from openapi_client.models.get_dfs_datastore import GetDfsDatastore
-from openapi_client.models.get_jdbc_datastore import GetJdbcDatastore
+from swagger_client.models.get_dfs_datastore import GetDfsDatastore
+from swagger_client.models.get_jdbc_datastore import GetJdbcDatastore
 from pydantic import StrictStr, Field
 from typing import Union, List, Set, Optional, Dict
 from typing_extensions import Literal, Self

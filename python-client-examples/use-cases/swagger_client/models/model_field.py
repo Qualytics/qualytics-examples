@@ -20,10 +20,10 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictFloat, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from openapi_client.models.computed_field import ComputedField
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
-from openapi_client.models.field_type import FieldType
-from openapi_client.models.quality_score import QualityScore
+from swagger_client.models.computed_field import ComputedField
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.field_type import FieldType
+from swagger_client.models.quality_score import QualityScore
 from typing import Optional, Set
 from typing_extensions import Self
 

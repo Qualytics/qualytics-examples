@@ -20,10 +20,10 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.datastore_stub import DatastoreStub
-from openapi_client.models.exportable_type import ExportableType
-from openapi_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
-from openapi_client.models.get_export_operation_containers_inner import GetExportOperationContainersInner
+from swagger_client.models.datastore_stub import DatastoreStub
+from swagger_client.models.exportable_type import ExportableType
+from swagger_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
+from swagger_client.models.get_export_operation_containers_inner import GetExportOperationContainersInner
 from typing import Optional, Set
 from typing_extensions import Self
 

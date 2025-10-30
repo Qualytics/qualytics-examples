@@ -19,9 +19,9 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.field_type import FieldType
-from openapi_client.models.group_spec_item import GroupSpecItem
-from openapi_client.models.values import Values
+from swagger_client.models.field_type import FieldType
+from swagger_client.models.group_spec_item import GroupSpecItem
+from swagger_client.models.values import Values
 from typing import Optional, Set
 from typing_extensions import Self
 

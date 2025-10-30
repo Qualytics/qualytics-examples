@@ -20,7 +20,7 @@ import json
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Any, ClassVar, Dict, List
 from typing_extensions import Annotated
-from openapi_client.models.page_union_get_partition_comment_get_anomaly_comment_items_inner import PageUnionGetPartitionCommentGetAnomalyCommentItemsInner
+from swagger_client.models.page_union_get_partition_comment_get_anomaly_comment_items_inner import PageUnionGetPartitionCommentGetAnomalyCommentItemsInner
 from typing import Optional, Set
 from typing_extensions import Self
 

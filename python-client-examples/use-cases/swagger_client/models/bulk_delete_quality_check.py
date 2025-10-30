@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.archived_check_status_type import ArchivedCheckStatusType
+from swagger_client.models.archived_check_status_type import ArchivedCheckStatusType
 from typing import Optional, Set
 from typing_extensions import Self
 

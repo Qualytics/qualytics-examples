@@ -20,7 +20,7 @@ import json
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Any, ClassVar, Dict, List
 from typing_extensions import Annotated
-from openapi_client.models.user import User
+from swagger_client.models.user import User
 from typing import Optional, Set
 from typing_extensions import Self
 

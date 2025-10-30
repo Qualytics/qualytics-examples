@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.schedule1 import Schedule1
+from swagger_client.models.schedule1 import Schedule1
 from typing import Optional, Set
 from typing_extensions import Self
 

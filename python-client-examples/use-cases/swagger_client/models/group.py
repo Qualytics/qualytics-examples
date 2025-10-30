@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.group_member import GroupMember
-from openapi_client.models.meta import Meta
+from swagger_client.models.group_member import GroupMember
+from swagger_client.models.meta import Meta
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -20,8 +20,8 @@ import json
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
 from typing_extensions import Annotated
-from openapi_client.models.quality_check_properties import QualityCheckProperties
-from openapi_client.models.rule_type import RuleType
+from swagger_client.models.quality_check_properties import QualityCheckProperties
+from swagger_client.models.rule_type import RuleType
 from typing import Optional, Set
 from typing_extensions import Self
 

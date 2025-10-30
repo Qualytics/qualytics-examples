@@ -19,9 +19,9 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.rule_type import RuleType
-from openapi_client.models.trigger_type import TriggerType
-from openapi_client.models.update_flow_actions_inner import UpdateFlowActionsInner
+from swagger_client.models.rule_type import RuleType
+from swagger_client.models.trigger_type import TriggerType
+from swagger_client.models.update_flow_actions_inner import UpdateFlowActionsInner
 from typing import Optional, Set
 from typing_extensions import Self
 

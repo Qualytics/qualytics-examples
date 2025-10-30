@@ -19,23 +19,23 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictBool, StrictInt, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
-from openapi_client.models.create_integration import CreateIntegration
-from openapi_client.models.get_alerting_status import GetAlertingStatus
-from openapi_client.models.get_alerting_template_message_preview import GetAlertingTemplateMessagePreview
-from openapi_client.models.get_entity_history import GetEntityHistory
-from openapi_client.models.get_integration_channel import GetIntegrationChannel
-from openapi_client.models.get_integration_domain import GetIntegrationDomain
-from openapi_client.models.get_integration_spec import GetIntegrationSpec
-from openapi_client.models.get_oauth_integration_url import GetOauthIntegrationUrl
-from openapi_client.models.integration import Integration
-from openapi_client.models.page_get_integration import PageGetIntegration
-from openapi_client.models.sync_integration_options import SyncIntegrationOptions
-from openapi_client.models.trigger_type import TriggerType
-from openapi_client.models.update_integration import UpdateIntegration
+from swagger_client.models.create_integration import CreateIntegration
+from swagger_client.models.get_alerting_status import GetAlertingStatus
+from swagger_client.models.get_alerting_template_message_preview import GetAlertingTemplateMessagePreview
+from swagger_client.models.get_entity_history import GetEntityHistory
+from swagger_client.models.get_integration_channel import GetIntegrationChannel
+from swagger_client.models.get_integration_domain import GetIntegrationDomain
+from swagger_client.models.get_integration_spec import GetIntegrationSpec
+from swagger_client.models.get_oauth_integration_url import GetOauthIntegrationUrl
+from swagger_client.models.integration import Integration
+from swagger_client.models.page_get_integration import PageGetIntegration
+from swagger_client.models.sync_integration_options import SyncIntegrationOptions
+from swagger_client.models.trigger_type import TriggerType
+from swagger_client.models.update_integration import UpdateIntegration
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class IntegrationsApi:

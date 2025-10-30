@@ -18,14 +18,14 @@ from typing_extensions import Annotated
 
 from pydantic import StrictInt
 from typing import List
-from openapi_client.models.create_user_token import CreateUserToken
-from openapi_client.models.get_user_token import GetUserToken
-from openapi_client.models.update_user_token import UpdateUserToken
-from openapi_client.models.user_token import UserToken
+from swagger_client.models.create_user_token import CreateUserToken
+from swagger_client.models.get_user_token import GetUserToken
+from swagger_client.models.update_user_token import UpdateUserToken
+from swagger_client.models.user_token import UserToken
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class UserTokensApi:

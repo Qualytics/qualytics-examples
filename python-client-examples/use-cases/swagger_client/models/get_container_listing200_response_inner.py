@@ -17,11 +17,11 @@ import json
 import pprint
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Any, List, Optional
-from openapi_client.models.computed_file_container_listing import ComputedFileContainerListing
-from openapi_client.models.computed_join_container_listing import ComputedJoinContainerListing
-from openapi_client.models.computed_table_container_listing import ComputedTableContainerListing
-from openapi_client.models.file_container_listing import FileContainerListing
-from openapi_client.models.table_container_listing import TableContainerListing
+from swagger_client.models.computed_file_container_listing import ComputedFileContainerListing
+from swagger_client.models.computed_join_container_listing import ComputedJoinContainerListing
+from swagger_client.models.computed_table_container_listing import ComputedTableContainerListing
+from swagger_client.models.file_container_listing import FileContainerListing
+from swagger_client.models.table_container_listing import TableContainerListing
 from pydantic import StrictStr, Field
 from typing import Union, List, Set, Optional, Dict
 from typing_extensions import Literal, Self

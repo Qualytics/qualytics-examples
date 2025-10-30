@@ -20,8 +20,8 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.anomaly_status_type import AnomalyStatusType
-from openapi_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
+from swagger_client.models.anomaly_status_type import AnomalyStatusType
+from swagger_client.models.get_anomaly_global_tags_inner import GetAnomalyGlobalTagsInner
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -19,13 +19,13 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictBool, StrictInt, StrictStr, field_validator
 from typing import List, Optional
 from typing_extensions import Annotated
-from openapi_client.models.field_type import FieldType
-from openapi_client.models.get_field_profile import GetFieldProfile
-from openapi_client.models.page_get_field_profile import PageGetFieldProfile
+from swagger_client.models.field_type import FieldType
+from swagger_client.models.get_field_profile import GetFieldProfile
+from swagger_client.models.page_get_field_profile import PageGetFieldProfile
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class FieldProfilesApi:

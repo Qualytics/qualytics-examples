@@ -20,8 +20,8 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.datastore_stub import DatastoreStub
-from openapi_client.models.get_connection_secrets_manager import GetConnectionSecretsManager
+from swagger_client.models.datastore_stub import DatastoreStub
+from swagger_client.models.get_connection_secrets_manager import GetConnectionSecretsManager
 from typing import Optional, Set
 from typing_extensions import Self
 

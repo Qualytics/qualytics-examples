@@ -17,12 +17,12 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
 from typing import Any
-from openapi_client.models.assignlicense import Assignlicense
-from openapi_client.models.license_request import LicenseRequest
+from swagger_client.models.assignlicense import Assignlicense
+from swagger_client.models.license_request import LicenseRequest
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class LicenseApi:

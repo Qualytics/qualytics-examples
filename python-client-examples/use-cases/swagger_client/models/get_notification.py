@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List
-from openapi_client.models.action_execution_stub import ActionExecutionStub
+from swagger_client.models.action_execution_stub import ActionExecutionStub
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -20,16 +20,16 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.computed_field import ComputedField
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
-from openapi_client.models.container_metrics import ContainerMetrics
-from openapi_client.models.datastore_stub import DatastoreStub
-from openapi_client.models.get_operation_container_profile import GetOperationContainerProfile
-from openapi_client.models.get_operation_container_scan import GetOperationContainerScan
-from openapi_client.models.incremental_checkpoint import IncrementalCheckpoint
-from openapi_client.models.join_type import JoinType
-from openapi_client.models.observability_measurement import ObservabilityMeasurement
-from openapi_client.models.user_stub import UserStub
+from swagger_client.models.computed_field import ComputedField
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.container_metrics import ContainerMetrics
+from swagger_client.models.datastore_stub import DatastoreStub
+from swagger_client.models.get_operation_container_profile import GetOperationContainerProfile
+from swagger_client.models.get_operation_container_scan import GetOperationContainerScan
+from swagger_client.models.incremental_checkpoint import IncrementalCheckpoint
+from swagger_client.models.join_type import JoinType
+from swagger_client.models.observability_measurement import ObservabilityMeasurement
+from swagger_client.models.user_stub import UserStub
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -19,11 +19,11 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.schedule_action_catalog_operation import ScheduleActionCatalogOperation
-from openapi_client.models.schedule_action_export_operation import ScheduleActionExportOperation
-from openapi_client.models.schedule_action_materialize_operation import ScheduleActionMaterializeOperation
-from openapi_client.models.schedule_action_profile_operation import ScheduleActionProfileOperation
-from openapi_client.models.schedule_action_scan_operation import ScheduleActionScanOperation
+from swagger_client.models.schedule_action_catalog_operation import ScheduleActionCatalogOperation
+from swagger_client.models.schedule_action_export_operation import ScheduleActionExportOperation
+from swagger_client.models.schedule_action_materialize_operation import ScheduleActionMaterializeOperation
+from swagger_client.models.schedule_action_profile_operation import ScheduleActionProfileOperation
+from swagger_client.models.schedule_action_scan_operation import ScheduleActionScanOperation
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

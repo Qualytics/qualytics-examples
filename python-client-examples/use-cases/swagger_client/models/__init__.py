@@ -51,6 +51,9 @@ from swagger_client.models.container_stub import ContainerStub
 from swagger_client.models.create_anomaly_comment import CreateAnomalyComment
 from swagger_client.models.create_catalog_operation import CreateCatalogOperation
 from swagger_client.models.create_computed_container import CreateComputedContainer
+from swagger_client.models.create_computed_table_container import CreateComputedTableContainer
+from swagger_client.models.create_computed_file_container import CreateComputedFileContainer
+from swagger_client.models.create_computed_join_container import CreateComputedJoinContainer
 from swagger_client.models.create_dfs_datastore import CreateDfsDatastore
 from swagger_client.models.create_file_container import CreateFileContainer
 from swagger_client.models.create_fs_catalog import CreateFsCatalog
@@ -205,6 +208,10 @@ from swagger_client.models.trigger_type import TriggerType
 from swagger_client.models.update_anomaly import UpdateAnomaly
 from swagger_client.models.update_comment import UpdateComment
 from swagger_client.models.update_computed_container import UpdateComputedContainer
+from swagger_client.models.update_computed_table_container import UpdateComputedTableContainer
+from swagger_client.models.update_computed_file_container import UpdateComputedFileContainer
+# Temporarily commented out - has incompatible old model reference
+# from swagger_client.models.update_computed_join_container import UpdateComputedJoinContainer
 from swagger_client.models.update_container_freshness_sla import UpdateContainerFreshnessSla
 from swagger_client.models.update_dfs_datastore import UpdateDfsDatastore
 from swagger_client.models.update_file_container import UpdateFileContainer

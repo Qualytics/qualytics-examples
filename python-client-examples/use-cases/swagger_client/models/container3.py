@@ -19,11 +19,11 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.computed_file_container_stub import ComputedFileContainerStub
-from openapi_client.models.computed_join_container_stub import ComputedJoinContainerStub
-from openapi_client.models.computed_table_container_stub import ComputedTableContainerStub
-from openapi_client.models.file_container_stub import FileContainerStub
-from openapi_client.models.table_container_stub import TableContainerStub
+from swagger_client.models.computed_file_container_stub import ComputedFileContainerStub
+from swagger_client.models.computed_join_container_stub import ComputedJoinContainerStub
+from swagger_client.models.computed_table_container_stub import ComputedTableContainerStub
+from swagger_client.models.file_container_stub import FileContainerStub
+from swagger_client.models.table_container_stub import TableContainerStub
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

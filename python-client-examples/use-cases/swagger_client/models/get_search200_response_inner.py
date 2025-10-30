@@ -19,9 +19,9 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.container_search_result import ContainerSearchResult
-from openapi_client.models.datastore_search_result import DatastoreSearchResult
-from openapi_client.models.field_search_result import FieldSearchResult
+from swagger_client.models.container_search_result import ContainerSearchResult
+from swagger_client.models.datastore_search_result import DatastoreSearchResult
+from swagger_client.models.field_search_result import FieldSearchResult
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

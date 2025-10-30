@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
 from typing import Optional, Set
 from typing_extensions import Self
 

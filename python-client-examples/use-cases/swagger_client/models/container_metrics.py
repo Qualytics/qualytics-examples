@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictFloat, StrictInt
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from openapi_client.models.quality_score import QualityScore
+from swagger_client.models.quality_score import QualityScore
 from typing import Optional, Set
 from typing_extensions import Self
 

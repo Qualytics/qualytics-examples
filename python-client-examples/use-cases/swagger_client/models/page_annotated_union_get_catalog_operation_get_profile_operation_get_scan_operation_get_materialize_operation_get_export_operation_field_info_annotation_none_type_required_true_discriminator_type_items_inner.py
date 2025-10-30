@@ -17,11 +17,11 @@ import json
 import pprint
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Any, List, Optional
-from openapi_client.models.get_catalog_operation import GetCatalogOperation
-from openapi_client.models.get_export_operation import GetExportOperation
-from openapi_client.models.get_materialize_operation import GetMaterializeOperation
-from openapi_client.models.get_profile_operation import GetProfileOperation
-from openapi_client.models.get_scan_operation import GetScanOperation
+from swagger_client.models.get_catalog_operation import GetCatalogOperation
+from swagger_client.models.get_export_operation import GetExportOperation
+from swagger_client.models.get_materialize_operation import GetMaterializeOperation
+from swagger_client.models.get_profile_operation import GetProfileOperation
+from swagger_client.models.get_scan_operation import GetScanOperation
 from pydantic import StrictStr, Field
 from typing import Union, List, Set, Optional, Dict
 from typing_extensions import Literal, Self

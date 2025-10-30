@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.create_partition_scan import CreatePartitionScan
+from swagger_client.models.create_partition_scan import CreatePartitionScan
 from typing import Optional, Set
 from typing_extensions import Self
 

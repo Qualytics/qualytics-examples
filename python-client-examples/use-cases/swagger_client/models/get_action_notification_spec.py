@@ -19,8 +19,8 @@ import json
 
 from pydantic import BaseModel, ConfigDict, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.get_connection_spec_properties import GetConnectionSpecProperties
-from openapi_client.models.notification_type import NotificationType
+from swagger_client.models.get_connection_spec_properties import GetConnectionSpecProperties
+from swagger_client.models.notification_type import NotificationType
 from typing import Optional, Set
 from typing_extensions import Self
 

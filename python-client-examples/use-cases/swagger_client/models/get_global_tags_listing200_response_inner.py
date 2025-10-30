@@ -19,10 +19,10 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.get_external_tag import GetExternalTag
-from openapi_client.models.get_external_tag_listing import GetExternalTagListing
-from openapi_client.models.get_global_tag import GetGlobalTag
-from openapi_client.models.get_global_tag_listing import GetGlobalTagListing
+from swagger_client.models.get_external_tag import GetExternalTag
+from swagger_client.models.get_external_tag_listing import GetExternalTagListing
+from swagger_client.models.get_global_tag import GetGlobalTag
+from swagger_client.models.get_global_tag_listing import GetGlobalTagListing
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

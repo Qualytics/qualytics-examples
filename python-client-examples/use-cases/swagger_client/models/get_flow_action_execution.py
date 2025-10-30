@@ -20,9 +20,9 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.action1 import Action1
-from openapi_client.models.get_action_execution_notification import GetActionExecutionNotification
-from openapi_client.models.get_action_execution_operation import GetActionExecutionOperation
+from swagger_client.models.action1 import Action1
+from swagger_client.models.get_action_execution_notification import GetActionExecutionNotification
+from swagger_client.models.get_action_execution_operation import GetActionExecutionOperation
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -20,17 +20,17 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictFloat, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional, Union
-from openapi_client.models.check_status_type import CheckStatusType
-from openapi_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
-from openapi_client.models.container3 import Container3
-from openapi_client.models.container_profile_stub import ContainerProfileStub
-from openapi_client.models.datastore_stub import DatastoreStub
-from openapi_client.models.get_observability_anomaly_listing import GetObservabilityAnomalyListing
-from openapi_client.models.get_quality_check_field import GetQualityCheckField
-from openapi_client.models.quality_check_properties import QualityCheckProperties
-from openapi_client.models.quality_check_template_stub import QualityCheckTemplateStub
-from openapi_client.models.rule_type import RuleType
-from openapi_client.models.user_stub import UserStub
+from swagger_client.models.check_status_type import CheckStatusType
+from swagger_client.models.computed_file_container_global_tags_inner import ComputedFileContainerGlobalTagsInner
+from swagger_client.models.container3 import Container3
+from swagger_client.models.container_profile_stub import ContainerProfileStub
+from swagger_client.models.datastore_stub import DatastoreStub
+from swagger_client.models.get_observability_anomaly_listing import GetObservabilityAnomalyListing
+from swagger_client.models.get_quality_check_field import GetQualityCheckField
+from swagger_client.models.quality_check_properties import QualityCheckProperties
+from swagger_client.models.quality_check_template_stub import QualityCheckTemplateStub
+from swagger_client.models.rule_type import RuleType
+from swagger_client.models.user_stub import UserStub
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -19,15 +19,15 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictInt, StrictStr
 from typing import Any, Optional
 from typing_extensions import Annotated
-from openapi_client.models.bulk_request import BulkRequest
-from openapi_client.models.bulk_response import BulkResponse
-from openapi_client.models.group import Group
-from openapi_client.models.qualytics_patch_op import QualyticsPatchOp
-from openapi_client.models.user_enterprise_user import UserEnterpriseUser
+from swagger_client.models.bulk_request import BulkRequest
+from swagger_client.models.bulk_response import BulkResponse
+from swagger_client.models.group import Group
+from swagger_client.models.qualytics_patch_op import QualyticsPatchOp
+from swagger_client.models.user_enterprise_user import UserEnterpriseUser
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class ScimApi:

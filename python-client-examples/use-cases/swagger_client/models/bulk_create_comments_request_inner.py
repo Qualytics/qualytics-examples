@@ -19,8 +19,8 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.create_anomaly_comment import CreateAnomalyComment
-from openapi_client.models.create_partition_comment import CreatePartitionComment
+from swagger_client.models.create_anomaly_comment import CreateAnomalyComment
+from swagger_client.models.create_partition_comment import CreatePartitionComment
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

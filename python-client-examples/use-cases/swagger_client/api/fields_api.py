@@ -19,22 +19,22 @@ from typing_extensions import Annotated
 from pydantic import Field, StrictInt, StrictStr
 from typing import List, Optional
 from typing_extensions import Annotated
-from openapi_client.models.bulk_update_field import BulkUpdateField
-from openapi_client.models.create_computed_field import CreateComputedField
-from openapi_client.models.field_stub import FieldStub
-from openapi_client.models.get_computed_field import GetComputedField
-from openapi_client.models.get_computed_field_spec import GetComputedFieldSpec
-from openapi_client.models.get_entity_history import GetEntityHistory
-from openapi_client.models.get_field_profile import GetFieldProfile
-from openapi_client.models.model_field import ModelField
-from openapi_client.models.page_field import PageField
-from openapi_client.models.transformation_type import TransformationType
-from openapi_client.models.update_computed_field import UpdateComputedField
-from openapi_client.models.update_field import UpdateField
+from swagger_client.models.bulk_update_field import BulkUpdateField
+from swagger_client.models.create_computed_field import CreateComputedField
+from swagger_client.models.field_stub import FieldStub
+from swagger_client.models.get_computed_field import GetComputedField
+from swagger_client.models.get_computed_field_spec import GetComputedFieldSpec
+from swagger_client.models.get_entity_history import GetEntityHistory
+from swagger_client.models.get_field_profile import GetFieldProfile
+from swagger_client.models.model_field import ModelField
+from swagger_client.models.page_field import PageField
+from swagger_client.models.transformation_type import TransformationType
+from swagger_client.models.update_computed_field import UpdateComputedField
+from swagger_client.models.update_field import UpdateField
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class FieldsApi:

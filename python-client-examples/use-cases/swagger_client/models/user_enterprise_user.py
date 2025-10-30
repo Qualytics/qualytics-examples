@@ -19,18 +19,18 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.address import Address
-from openapi_client.models.email import Email
-from openapi_client.models.enterprise_user import EnterpriseUser
-from openapi_client.models.entitlement import Entitlement
-from openapi_client.models.group_membership import GroupMembership
-from openapi_client.models.im import Im
-from openapi_client.models.meta import Meta
-from openapi_client.models.name import Name
-from openapi_client.models.phone_number import PhoneNumber
-from openapi_client.models.photo import Photo
-from openapi_client.models.role import Role
-from openapi_client.models.x509_certificate import X509Certificate
+from swagger_client.models.address import Address
+from swagger_client.models.email import Email
+from swagger_client.models.enterprise_user import EnterpriseUser
+from swagger_client.models.entitlement import Entitlement
+from swagger_client.models.group_membership import GroupMembership
+from swagger_client.models.im import Im
+from swagger_client.models.meta import Meta
+from swagger_client.models.name import Name
+from swagger_client.models.phone_number import PhoneNumber
+from swagger_client.models.photo import Photo
+from swagger_client.models.role import Role
+from swagger_client.models.x509_certificate import X509Certificate
 from typing import Optional, Set
 from typing_extensions import Self
 

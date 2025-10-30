@@ -20,7 +20,7 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictBool, StrictInt
 from typing import Any, ClassVar, Dict, List
-from openapi_client.models.get_notification import GetNotification
+from swagger_client.models.get_notification import GetNotification
 from typing import Optional, Set
 from typing_extensions import Self
 

@@ -20,27 +20,27 @@ from datetime import date
 from pydantic import Field, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, List, Optional
 from typing_extensions import Annotated
-from openapi_client.models.action_notification import ActionNotification
-from openapi_client.models.create_action_notification import CreateActionNotification
-from openapi_client.models.create_flow import CreateFlow
-from openapi_client.models.flow import Flow
-from openapi_client.models.flow_stub import FlowStub
-from openapi_client.models.get_action_notification_spec import GetActionNotificationSpec
-from openapi_client.models.get_action_notification_test import GetActionNotificationTest
-from openapi_client.models.get_entity_history import GetEntityHistory
-from openapi_client.models.get_flow_execution import GetFlowExecution
-from openapi_client.models.get_flow_permission import GetFlowPermission
-from openapi_client.models.page_action import PageAction
-from openapi_client.models.page_get_flow_execution_stub import PageGetFlowExecutionStub
-from openapi_client.models.page_get_flow_permission import PageGetFlowPermission
-from openapi_client.models.trigger_type import TriggerType
-from openapi_client.models.update_deactivate_flow import UpdateDeactivateFlow
-from openapi_client.models.update_flow import UpdateFlow
-from openapi_client.models.update_mute_action_notification import UpdateMuteActionNotification
+from swagger_client.models.action_notification import ActionNotification
+from swagger_client.models.create_action_notification import CreateActionNotification
+from swagger_client.models.create_flow import CreateFlow
+from swagger_client.models.flow import Flow
+from swagger_client.models.flow_stub import FlowStub
+from swagger_client.models.get_action_notification_spec import GetActionNotificationSpec
+from swagger_client.models.get_action_notification_test import GetActionNotificationTest
+from swagger_client.models.get_entity_history import GetEntityHistory
+from swagger_client.models.get_flow_execution import GetFlowExecution
+from swagger_client.models.get_flow_permission import GetFlowPermission
+from swagger_client.models.page_action import PageAction
+from swagger_client.models.page_get_flow_execution_stub import PageGetFlowExecutionStub
+from swagger_client.models.page_get_flow_permission import PageGetFlowPermission
+from swagger_client.models.trigger_type import TriggerType
+from swagger_client.models.update_deactivate_flow import UpdateDeactivateFlow
+from swagger_client.models.update_flow import UpdateFlow
+from swagger_client.models.update_mute_action_notification import UpdateMuteActionNotification
 
-from openapi_client.api_client import ApiClient, RequestSerialized
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from swagger_client.api_client import ApiClient, RequestSerialized
+from swagger_client.api_response import ApiResponse
+from swagger_client.rest import RESTResponseType
 
 
 class FlowsApi:

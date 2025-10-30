@@ -20,8 +20,8 @@ import json
 from datetime import date, datetime
 from pydantic import BaseModel, ConfigDict
 from typing import Any, ClassVar, Dict, List
-from openapi_client.models.get_assertion_daily_metric import GetAssertionDailyMetric
-from openapi_client.models.insights_timeframe import InsightsTimeframe
+from swagger_client.models.get_assertion_daily_metric import GetAssertionDailyMetric
+from swagger_client.models.insights_timeframe import InsightsTimeframe
 from typing import Optional, Set
 from typing_extensions import Self
 

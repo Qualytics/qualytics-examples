@@ -19,8 +19,8 @@ import pprint
 import re  # noqa: F401
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Optional
-from openapi_client.models.action_notification import ActionNotification
-from openapi_client.models.action_operation import ActionOperation
+from swagger_client.models.action_notification import ActionNotification
+from swagger_client.models.action_operation import ActionOperation
 from typing import Union, Any, List, Set, TYPE_CHECKING, Optional, Dict
 from typing_extensions import Literal, Self
 from pydantic import Field

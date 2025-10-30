@@ -17,10 +17,10 @@ import json
 import pprint
 from pydantic import BaseModel, ConfigDict, Field, StrictStr, ValidationError, field_validator
 from typing import Any, List, Optional
-from openapi_client.models.get_entity_tag import GetEntityTag
-from openapi_client.models.get_external_tag import GetExternalTag
-from openapi_client.models.get_global_tag import GetGlobalTag
-from openapi_client.models.get_lineage_tag import GetLineageTag
+from swagger_client.models.get_entity_tag import GetEntityTag
+from swagger_client.models.get_external_tag import GetExternalTag
+from swagger_client.models.get_global_tag import GetGlobalTag
+from swagger_client.models.get_lineage_tag import GetLineageTag
 from pydantic import StrictStr, Field
 from typing import Union, List, Set, Optional, Dict
 from typing_extensions import Literal, Self

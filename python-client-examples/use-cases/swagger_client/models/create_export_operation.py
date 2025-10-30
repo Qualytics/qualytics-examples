@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictBool, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.exportable_type import ExportableType
+from swagger_client.models.exportable_type import ExportableType
 from typing import Optional, Set
 from typing_extensions import Self
 

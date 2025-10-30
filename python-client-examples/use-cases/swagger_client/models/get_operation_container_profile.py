@@ -20,8 +20,8 @@ import json
 from datetime import datetime
 from pydantic import BaseModel, ConfigDict, StrictInt, StrictStr, field_validator
 from typing import Any, ClassVar, Dict, List, Optional
-from openapi_client.models.field_profile_stub import FieldProfileStub
-from openapi_client.models.partition import Partition
+from swagger_client.models.field_profile_stub import FieldProfileStub
+from swagger_client.models.partition import Partition
 from typing import Optional, Set
 from typing_extensions import Self
 

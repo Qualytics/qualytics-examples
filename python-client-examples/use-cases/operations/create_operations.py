@@ -4,7 +4,8 @@ import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
 
-# Configure OAuth2 access token for authorization: Auth0ImplicitBearer
+# Configure API client with credentials from .env file
+# The configuration reads API_TOKEN (Personal Access Token) and API_BASE_URL from the environment
 configuration = swagger_client.Configuration()
 
 # Update the payloads with the specifics for your needs.  See the official docs (Note that "demo" can be replaed in this URL to load the docs from your deployment) for the expected schema and valid values: https://demo.qualytics.io/api/docs#tag/operations/operation/create_operation

@@ -8,7 +8,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 import swagger_client
 
-# Configure OAuth2 access token for authorization: Auth0ImplicitBearer
+# Configure API client with credentials from .env file
+# The configuration reads API_TOKEN (Personal Access Token) and API_BASE_URL from the environment
 configuration = swagger_client.Configuration()
 
 # create an instance of the API class

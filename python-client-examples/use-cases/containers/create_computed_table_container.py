@@ -19,7 +19,8 @@ import swagger_client
 from swagger_client.rest import ApiException
 from swagger_client.custom_api_client import CustomApiClient
 
-# Configure OAuth2 access token for authorization: Auth0ImplicitBearer
+# Configure API client with credentials from .env file
+# The configuration reads API_TOKEN (Personal Access Token) and API_BASE_URL from the environment
 configuration = swagger_client.Configuration()
 
 # Create an instance of the API class using our CustomApiClient

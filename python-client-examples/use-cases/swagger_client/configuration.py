@@ -13,17 +13,12 @@
 from __future__ import absolute_import
 
 import copy
-import json
 import logging
 import multiprocessing
 import sys
 import urllib3
 import os
 import six
-import requests
-from jose import jwt  # noqa
-from calendar import timegm
-from datetime import datetime
 
 from six.moves import http_client as httplib
 from dotenv import load_dotenv, find_dotenv
@@ -64,16 +59,12 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         self.api_key_prefix = {}
         # function to refresh API key if expired
         self.refresh_api_key_hook = None
-        # Client Id for AUTH0 authentication
-        self.client_id = os.getenv('AUTH0_CLIENT_ID')
-        # Client Secret for AUTH0 authentication
-        self.client_secret = os.getenv('AUTH0_CLIENT_SECRET')
-        # Audience for AUTH0 authentication
-        self.audience = os.getenv('AUTH0_AUDIENCE')
-        # AUTH0 URL authentication
-        self.auth_url = os.getenv('AUTH0_DOMAIN')
+        # Personal Access Token for authentication
+        personal_access_token = os.getenv('PERSONAL_ACCESS_TOKEN')
+        if not personal_access_token:
+            raise ValueError("PERSONAL_ACCESS_TOKEN is not set in .env file. Please set it to authenticate with Qualytics API.")
         # access token for OAuth
-        self.access_token = self.get_basic_auth_token()
+        self.access_token = personal_access_token
         # Logging Settings
         self.logger = {}
         self.logger["package_logger"] = logging.getLogger("swagger_client")
@@ -226,43 +217,6 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
                 return "%s %s" % (prefix, key)
             else:
                 return key
-
-    def request_new_token(self):
-
-        json_params = {
-            'client_id': self.client_id,
-            'client_secret': self.client_secret,
-            'audience': self.audience,
-            'grant_type': 'client_credentials'
-        }
-
-        response = requests.post(
-            url=f'https://{self.auth_url}/oauth/token',
-            headers={'Content-Type': 'application/json'},
-            json=json_params
-        )
-        if 'access_token' in response.json():
-            return str(response.json()['access_token'])
-        else:
-            raise Exception(f"Unable to authenticate with the provided values in your .env file:  {response.json()['error_description']}")
-
-    def get_basic_auth_token(self):
-        """Gets HTTP basic authentication header (string).
-
-        :return: The token for basic HTTP authentication.
-        """
-        if os.getenv('AUTH0_TOKEN'):
-            token = os.getenv('AUTH0_TOKEN')
-        else:
-            token = self.request_new_token()
-            os.environ['AUTH0_TOKEN'] = token
-
-        if int(jwt.get_unverified_claims(token)['exp']) - 60 > (timegm(datetime.utcnow().utctimetuple())):
-            return token
-        else:
-            token = self.request_new_token()
-            os.environ['AUTH0_TOKEN'] = token
-            return token
 
     def auth_settings(self):
         """Gets Auth Settings dict for api client.

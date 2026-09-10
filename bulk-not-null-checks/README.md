@@ -33,6 +33,7 @@ one short script, ~50 checks created in seconds.
    | `TABLE_NAMES` | A list of table names, e.g. `["CUSTOMERS", "ORDERS"]`, or `[]` for **all** tables in the datastore |
    | `TAG_NAME` | Optional label applied to every created check (default `"API Demo"`) — makes the checks easy to find and clean up |
    | `MAX_CHECKS` | Safety limit; the script stops after creating this many checks (default 50) |
+   | `VERIFY_SSL` | Set to `False` for on-prem installs that use their own (self-signed) HTTPS certificate — otherwise every call fails with a certificate error. Keep `True` for cloud instances. |
 
 3. Run it:
 

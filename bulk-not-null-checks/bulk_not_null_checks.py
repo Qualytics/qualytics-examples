@@ -34,6 +34,9 @@ TAG_NAME = "API Demo"  # a label added to every check so they are easy to find
 
 MAX_CHECKS = 50  # safety limit - stop after creating this many checks
 
+VERIFY_SSL = False  # set to False for on-prem installs that use their own
+# (self-signed) HTTPS certificate; keep True for cloud instances
+
 # -----------------------------------------------------------------------------
 #  No changes needed below this line.
 # -----------------------------------------------------------------------------
@@ -50,6 +53,13 @@ BASE_URL = BASE_URL.rstrip("/")
 # Every request carries the token so Qualytics knows who we are.
 HEADERS = {"Authorization": "Bearer " + API_TOKEN}
 
+# When certificate verification is off, Python prints a warning on every
+# single request - silence it so the demo output stays readable.
+if not VERIFY_SSL:
+    import urllib3
+
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 # =============================================================================
 #  PART 1 - EXTRACT (GET): pull tables and columns out of Qualytics
@@ -65,6 +75,7 @@ response = requests.get(
     BASE_URL + "/api/containers",
     headers=HEADERS,
     params={"datastore": DATASTORE_ID, "size": 100},
+    verify=VERIFY_SSL,
 )
 response.raise_for_status()  # stop with a clear error if something went wrong
 tables = response.json()["items"]
@@ -88,6 +99,7 @@ for table in tables:
         BASE_URL + "/api/fields",
         headers=HEADERS,
         params={"container_id": table["id"], "size": 100},
+        verify=VERIFY_SSL,
     )
     response.raise_for_status()
     columns = response.json()["items"]
@@ -132,6 +144,7 @@ if TAG_NAME:
         BASE_URL + "/api/global-tags",
         headers=HEADERS,
         json={"type": "global", "name": TAG_NAME, "color": "#2196F3"},
+        verify=VERIFY_SSL,
     )
 
 # --- 2b. Create one Not Null check per column ---------------------------------
@@ -166,7 +179,7 @@ for entry in payload:
         check["tags"] = [TAG_NAME]
 
     response = requests.post(
-        BASE_URL + "/api/quality-checks", headers=HEADERS, json=check
+        BASE_URL + "/api/quality-checks", headers=HEADERS, json=check, verify=VERIFY_SSL
     )
 
     if response.ok:
